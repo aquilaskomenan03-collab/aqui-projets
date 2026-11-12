@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#091321">
+  <meta name="description" content="MG Multiservice Groupe : menuiserie, peinture et vernissage. Expertise, qualité et engagement pour vos projets.">
+  <title>MG Multiservice Groupe | Menuiserie, peinture & vernissage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="hero.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="MG Multiservice Groupe, accueil">
+      <img src="assets/logo-embleme.png" alt="Emblème MG Multiservice Groupe">
+      <span>MG <b>MULTISERVICE</b></span>
+    </a>
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#services">Nos services</a><a href="#apropos">À propos</a><a href="#approche">Notre méthode</a><a href="/client">Espace client</a>
+      <a class="nav-cta" href="#contact">Parlons de votre projet <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero stage" id="accueil">
+      <canvas class="fx" aria-hidden="true"></canvas>
+      <div class="beam beam-a" aria-hidden="true"></div><div class="beam beam-b" aria-hidden="true"></div><div class="spot" aria-hidden="true"></div>
+      <div class="stage-inner">
+        <div class="emblem"><div class="halo"></div><div class="ring"></div><div class="face"><img src="assets/logo-embleme.png" alt="Emblème MG : les initiales du groupe sous un toit stylisé"></div></div>
+        <p class="eyebrow"><span></span> Menuiserie, peinture et vernissage à Abidjan</p>
+        <h1><span class="l">Le travail soigné.</span><span class="l">Jusqu’au détail.</span></h1>
+        <p class="hero-text">MG Multiservice Groupe vous accompagne dans vos travaux de menuiserie, de peinture et de vernissage, avec une attention particulière portée à la qualité du rendu.</p>
+        <div class="hero-actions"><a class="button button-orange" href="#contact">Demander un devis <span>↗</span></a><a class="text-link" href="#services">Découvrir nos métiers <span>↓</span></a></div>
+        <ul class="trades"><li><a href="#services" style="--c:#1b84ea"><i></i>Menuiserie</a></li><li><a href="#services" style="--c:#f5a01c"><i></i>Peinture</a></li><li><a href="#services" style="--c:#ffd27a"><i></i>Vernissage</a></li></ul>
+      </div>
+    </section>
+
+    <section class="services section-pad" id="services">
+      <div class="section-heading" data-reveal><div><p class="eyebrow"><span></span> Ce que nous faisons</p><h2>Un savoir-faire.<br><em>Trois expertises.</em></h2></div><p>Des interventions pensées avec précision et réalisées avec le souci du détail, pour des résultats à la hauteur de vos attentes.</p></div>
+      <div class="service-grid">
+        <article class="service-card" data-reveal style="--d:0.12s"><div class="service-number">Bois</div><div class="service-icon icon-wood"><span>⌁</span></div><h3>Menuiserie</h3><p>Création et travaux de menuiserie réalisés avec précision, pour des ouvrages solides et soignés.</p><a href="#contact" aria-label="Demander un devis en menuiserie">En savoir plus <span>↗</span></a></article>
+        <article class="service-card featured" data-reveal style="--d:0.24s"><div class="service-number">Couleur</div><div class="service-icon icon-paint"><span>◒</span></div><h3>Peinture</h3><p>Couleur, protection et finition : des surfaces préparées avec soin pour un rendu durable.</p><a href="#contact" aria-label="Demander un devis en peinture">En savoir plus <span>↗</span></a></article>
+        <article class="service-card" data-reveal style="--d:0.36s"><div class="service-number">Finition</div><div class="service-icon icon-varnish"><span>✳</span></div><h3>Vernissage</h3><p>Une finition maîtrisée pour révéler les matières, apporter de la brillance et protéger dans le temps.</p><a href="#contact" aria-label="Demander un devis en vernissage">En savoir plus <span>↗</span></a></article>
+      </div>
+    </section>
+
+    <section class="portfolio section-pad" id="realisations">
+      <div class="section-heading" data-reveal>
+        <div><p class="eyebrow"><span></span> En images</p><h2>Le savoir-faire<br><em>prend forme.</em></h2></div>
+        <p>Découvrez quelques réalisations en menuiserie, peinture et vernissage.</p>
+      </div>
+      <div class="portfolio-grid" id="portfolio-grid">
+        <article class="photo-card" data-reveal style="--d:0.1s" data-photo-slot="menuiserie">
+          <div class="photo-placeholder wood-placeholder"><span class="photo-number">01</span><span class="placeholder-symbol">⌂</span><span class="photo-badge">PHOTO PRINCIPALE</span><span class="photo-caption">Menuiserie</span></div>
+          <div class="photo-extra-grid" aria-label="Deux emplacements photo supplémentaires pour la menuiserie"><div class="photo-mini-slot" data-photo-slot="menuiserie-2"><span>＋</span><small>Photo 02</small></div><div class="photo-mini-slot" data-photo-slot="menuiserie-3"><span>＋</span><small>Photo 03</small></div></div>
+          <div class="photo-card-meta"><h3>Menuiserie</h3><span>3 emplacements photo</span></div>
+        </article>
+        <article class="photo-card" data-reveal style="--d:0.22s" data-photo-slot="peinture">
+          <div class="photo-placeholder paint-placeholder"><span class="photo-number">04</span><span class="placeholder-symbol">◒</span><span class="photo-badge">PHOTO PRINCIPALE</span><span class="photo-caption">Peinture</span></div>
+          <div class="photo-extra-grid" aria-label="Deux emplacements photo supplémentaires pour la peinture"><div class="photo-mini-slot" data-photo-slot="peinture-2"><span>＋</span><small>Photo 05</small></div><div class="photo-mini-slot" data-photo-slot="peinture-3"><span>＋</span><small>Photo 06</small></div></div>
+          <div class="photo-card-meta"><h3>Peinture</h3><span>3 emplacements photo</span></div>
+        </article>
+        <article class="photo-card" data-reveal style="--d:0.34s" data-photo-slot="vernissage">
+          <div class="photo-placeholder varnish-placeholder"><span class="photo-number">07</span><span class="placeholder-symbol">✳</span><span class="photo-badge">PHOTO PRINCIPALE</span><span class="photo-caption">Vernissage</span></div>
+          <div class="photo-extra-grid" aria-label="Deux emplacements photo supplémentaires pour le vernissage"><div class="photo-mini-slot" data-photo-slot="vernissage-2"><span>＋</span><small>Photo 08</small></div><div class="photo-mini-slot" data-photo-slot="vernissage-3"><span>＋</span><small>Photo 09</small></div></div>
+          <div class="photo-card-meta"><h3>Vernissage</h3><span>3 emplacements photo</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section-pad" id="apropos">
+      <div class="about-mark" data-mark><span class="mark-m">M</span><span class="mark-g">G</span><div class="mark-roof"></div><div class="mark-line"></div></div>
+      <div class="about-copy" data-reveal><p class="eyebrow"><span></span> MG Multiservice Groupe</p><h2>Le souci du détail,<br><em>à chaque étape.</em></h2><p>Parce qu’un travail réussi se voit dans les finitions, nous mettons notre polyvalence et notre engagement au service de vos projets. De la menuiserie à la touche finale, chaque étape compte.</p><a class="button button-outline" href="#contact">Échangeons sur votre projet <span>↗</span></a></div>
+    </section>
+
+    <section class="approach section-pad" id="approche">
+      <div class="section-heading"><div><p class="eyebrow"><span></span> Notre engagement</p><h2>Bien faire les choses,<br><em>tout simplement.</em></h2></div><p>Un projet mérite une écoute attentive, une exécution appliquée et un résultat dont on peut être fier.</p></div>
+      <div class="steps" data-steps><div class="step"><span>01</span><div><h3>On vous écoute</h3><p>Nous prenons le temps de comprendre votre besoin et vos envies.</p></div></div><div class="step"><span>02</span><div><h3>On prépare</h3><p>Chaque intervention est organisée selon les particularités du projet.</p></div></div><div class="step"><span>03</span><div><h3>On réalise</h3><p>Nous travaillons avec attention pour un résultat net et durable.</p></div></div></div>
+    </section>
+
+    <section class="contact section-pad" id="contact"><div class="contact-orb"></div><div class="contact-content" data-reveal><p class="eyebrow"><span></span> Parlons de votre projet</p><h2>Votre projet<br>commence <em>ici.</em></h2><p>Décrivez-nous votre besoin. MG Multiservice Groupe vous recontactera pour en discuter.</p><div class="contact-details"><a href="tel:+2250103018578"><span>TÉLÉPHONE</span>+225 01 03 01 85 78 <b>↗</b></a><a href="mailto:contact@devsitwo.ci" data-public-email><span>E-MAIL</span>contact@devsitwo.ci <b>↗</b></a><div class="contact-location" id="public-area"><span>ZONE D’INTERVENTION</span><span class="site-info-value" data-site-info="serviceArea">Abidjan, Côte d’Ivoire</span></div><div class="contact-location site-info-extra" data-info-row="serviceHours" hidden><span>HORAIRES</span><span class="site-info-value" data-site-info="serviceHours"></span></div><div class="contact-location site-info-extra" data-info-row="responseTime" hidden><span>DÉLAI DE RÉPONSE</span><span class="site-info-value" data-site-info="responseTime"></span></div><div class="contact-location site-info-extra" data-info-row="warranty" hidden><span>GARANTIE / ENGAGEMENT</span><span class="site-info-value" data-site-info="warranty"></span></div><a class="whatsapp-link" href="https://wa.me/2250103018578?text=Bonjour%20MG%20Multiservice%20Groupe%2C%20je%20souhaite%20parler%20d%E2%80%99un%20projet." target="_blank" rel="noopener noreferrer">Ou écrire sur WhatsApp ↗</a></div></div><form class="quote-form" data-reveal id="quote-form"><h3>Demander un devis</h3><p>Les champs marqués d’un * sont obligatoires.</p><div class="form-row"><label>Nom complet *<input name="name" autocomplete="name" maxlength="100" required></label><label>Téléphone *<input name="phone" type="tel" autocomplete="tel" maxlength="30" placeholder="+225 …" required></label></div><div class="form-row"><label>E-mail<input name="email" type="email" autocomplete="email" maxlength="254" placeholder="vous@exemple.com"></label><label>Service souhaité *<select name="service" required><option value="">Choisir un service</option><option value="Menuiserie">Menuiserie</option><option value="Peinture">Peinture</option><option value="Vernissage">Vernissage</option><option value="Autre demande">Autre demande</option></select></label></div><label>Parlez-nous du projet *<textarea name="message" rows="4" maxlength="2000" required placeholder="Quelques détails sur votre besoin…"></textarea></label><label class="consent"><input type="checkbox" name="consent" required><span>J’ai lu la <a href="/confidentialite" target="_blank" rel="noopener">politique de confidentialité</a> et j’accepte l’utilisation de mes données pour traiter cette demande.</span></label><label class="consent account-choice"><input type="checkbox" name="create_account"><span>Créer mon espace client pour retrouver mes demandes à tout moment.</span></label><label id="account-password-wrap" hidden>Mot de passe du compte (12 caractères minimum)<input name="account_password" type="password" autocomplete="new-password" minlength="12"></label><div aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden"><label>Ne pas remplir<input name="website" tabindex="-1" autocomplete="off"></label></div><button class="button button-orange form-submit" type="submit">Envoyer ma demande <span>↗</span></button><p class="form-status" id="form-status" role="status" aria-live="polite"></p></form></section>
+  </main>
+  <footer><a class="footer-brand" href="#accueil">MG <span>MULTISERVICE GROUPE</span></a><p>Expertise <i>•</i> Qualité <i>•</i> Engagement</p><a href="#accueil" class="back-top">Retour en haut ↑</a><a class="admin-link" href="/client">Espace client — suivre ma demande</a><a class="admin-link" href="/admin">Espace professionnel</a><a class="admin-link" href="/mentions-legales">Mentions légales</a><a class="admin-link" href="/confidentialite">Confidentialité</a><div class="copyright">© <span id="year"></span> MG Multiservice Groupe</div></footer>
+  <script src="script.js"></script>
+  <script src="hero.js"></script>
+</body>
+</html>

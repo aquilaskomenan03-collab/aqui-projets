@@ -1,0 +1,12 @@
+{
+  "name": "mg-multiservice-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site vitrine et demandes de devis pour MG Multiservice Groupe",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

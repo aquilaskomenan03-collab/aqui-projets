@@ -1,0 +1,21 @@
+Options -Indexes
+DirectoryIndex index.html
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^\.git(?:/|$) - [F,L]
+  RewriteRule ^data/ - [F,L]
+  RewriteRule ^api/(.*)$ api.php?route=$1 [QSA,L]
+  RewriteRule ^client/?$ client.html [L]
+  RewriteRule ^admin/?$ admin.html [L]
+  RewriteRule ^confidentialite/?$ confidentialite.html [L]
+  RewriteRule ^mentions-legales/?$ mentions-legales.html [L]
+  RewriteRule ^setup/?$ setup.php [L]
+</IfModule>
+<FilesMatch "^(config\.php|config\.php\.new|\.env|server\.js|package(-lock)?\.json|Dockerfile(?:\.php)?|docker-compose\.ya?ml|\.dockerignore|\.gitignore|README\.md|NOTES-PREPUBLICATION\.md|cleanup\.php|retention-cleanup-lib\.php|mg-multiservice-site\.zip|.*\.sqlite.*)$">
+  Require all denied
+</FilesMatch>
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
